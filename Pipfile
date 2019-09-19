@@ -36,7 +36,6 @@ coreapi = "*"
 Django = "<2.0"
 numpy = "*"
 django-simple-history = "*"
-twisted = {version = "*",extras = ["tls"]}
 django-debug-toolbar = "*"
 google-api-python-client = "*"
 "oauth2client" = "*"
