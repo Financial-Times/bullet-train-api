@@ -1,7 +1,27 @@
 {
-	"scripts": {
-		"dokku": {
-			"predeploy": "python src/manage.py migrate --noinput"
-		}
-	}
+  "scripts": {
+    "dokku": {
+      "predeploy": "python src/manage.py migrate --noinput"
+    }
+  },
+  "env": {
+    "DATABASE_URL": {
+      "required": true
+    },
+    "DJANGO_ALLOWED_HOSTS": {
+      "required": true
+    },
+    "DJANGO_SETTINGS_MODULE": {
+      "required": true
+    },
+    "SENDGRID_API_KEY": {
+      "required": true
+    },
+    "SENDGRID_PASSWORD": {
+      "required": true
+    },
+    "SENDGRID_USERNAME": {
+      "required": true
+    }
+  }
 }
